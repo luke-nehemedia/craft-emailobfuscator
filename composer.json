@@ -8,7 +8,15 @@
         "cms",
         "craftcms",
         "craft-plugin",
-        "craft emailobfuscator"
+        "craft emailobfuscator",
+        "spam",
+        "spam-protection",
+        "email",
+        "mail",
+        "privacy",
+        "robots",
+        "obfuscator",
+        "rot13"
     ],
     "support": {
         "docs": "https://github.com/luke-nehemedia/craft-emailobfuscator/blob/master/README.md",

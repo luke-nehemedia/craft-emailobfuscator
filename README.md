@@ -1,12 +1,13 @@
-# Craft Emailobfuscator plugin for Craft CMS 3.x
+# Email obfuscator plugin for Craft CMS 3.x
 
-A simple plugin that adds a twig tag to obfuscate email addresses (by rot13) in text fields.
+A simple plugin that adds a twig tag to obfuscate email addresses (by ROT13) in text fields.
 
-![Screenshot](resources/img/plugin-logo.png)
+![Plugin Logo](resources/img/plugin-logo.png)
 
 ## Requirements
 
-This plugin requires Craft CMS 3.0.0-beta.23 or later.
+This plugin is made for Craft CMS 3.0.0-beta.23 or later.
+It requires the [Email-Obfuscator by Propaganistas](https://github.com/Propaganistas/Email-Obfuscator) since this plugin is merely a wrapper for his Twig Extension.
 
 ## Installation
 
@@ -22,22 +23,30 @@ To install the plugin, follow these instructions.
 
 3. In the Control Panel, go to Settings → Plugins and click the “Install” button for Craft Emailobfuscator.
 
-## Craft Emailobfuscator Overview
+You can also update your craft's `composer.json` file and run `composer update`. 
 
--Insert text here-
+## Using the Plugin
 
-## Configuring Craft Emailobfuscator
+This plugin adds the Twig Extension made by [Propaganistas](https://github.com/Propaganistas/Email-Obfuscator) to Craft. It masks all email addresses by ROT13 ciphering or CSS reverse text direction. A simple javascript file decodes the masked emails on the frontend.
 
--Insert text here-
+To use it, just use the `obfuscateEmail` Twig filter on any text field or string:
 
-## Using Craft Emailobfuscator
+```twig
+{{ "Sample Text"|obfuscateEmail }}
+{{ textfield|obfuscateEmail }}
+```
 
--Insert text here-
+## Configuring the Plugin
 
-## Craft Emailobfuscator Roadmap
+There are no settings right now. 
 
-Some things to do, and ideas for potential features:
+## Roadmap
+- There might be some options to choose from with regard to how to include the javascript code.
 
-* Release it
+## Credits
+- [Propaganistas](https://github.com/Propaganistas) for developing this great Twig Extension
+- [nystudio107](https://nystudio107.com/blog) for providing great articles on Craft3 plugin development
+
+
 
 Brought to you by [Lucas Bares](http://luke.nehemedia.de)
