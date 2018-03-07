@@ -1,0 +1,41 @@
+{
+    "name": "lucasbares/craft-emailobfuscator",
+    "description": "A simple plugin that adds a twig tag to obfuscate email addresses (by rot13) in text fields.",
+    "type": "craft-plugin",
+    "version": "2.0.0-beta.1",
+    "keywords": [
+        "craft",
+        "cms",
+        "craftcms",
+        "craft-plugin",
+        "craft emailobfuscator"
+    ],
+    "support": {
+        "docs": "https://github.com/luke-nehemedia/craft-emailobfuscator/blob/master/README.md",
+        "issues": "https://github.com/luke-nehemedia/craft-emailobfuscator/issues"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Lucas Bares",
+            "homepage": "http://luke.nehemedia.de"
+        }
+    ],
+    "require": {
+        "craftcms/cms": "^3.0.0-RC1",
+        "propaganistas/email-obfuscator": "~1.0"
+    },
+    "autoload": {
+        "psr-4": {
+          "lucasbares\\craftemailobfuscator\\": "src/"
+        }
+    },
+    "extra": {
+        "name": "Craft Emailobfuscator",
+        "handle": "craft-emailobfuscator",
+        "hasCpSettings": false,
+        "hasCpSection": false,
+        "changelogUrl": "https://raw.githubusercontent.com/luke-nehemedia/craft-emailobfuscator/master/CHANGELOG.md",
+        "class": "lucasbares\\craftemailobfuscator\\CraftEmailobfuscator"
+    }
+}
