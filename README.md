@@ -4,9 +4,6 @@ A simple plugin that adds a twig tag to obfuscate email addresses (by ROT13) in 
 
 ![Plugin Logo](resources/img/plugin-logo.png)
 
-## Alert
-There is an error right now that prevents installation through the Craft3 Plugin Store. I am working on a fix, it won't take long.
-
 ## Requirements
 
 This plugin is made for Craft CMS 3.0.0-beta.23 or later.
