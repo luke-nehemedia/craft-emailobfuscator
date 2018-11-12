@@ -5,7 +5,12 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/) and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ## Unreleased
-- Right now, the java scipt file is included into the header of the document. In a future version, there might be an option to include it directly into the code or to use an onload-method that renders the addresses.
+- No new featured planned right now. Hit me up if you have any good ideas/needs.
 
 ## 2.0.0-beta.1 - 2018-03-07
 - Initial beta release
+
+## 2.0.1 - 2018-11-12
+- First "stable" release since there is no report of any bugs so far.
+- Added a setting "includeJS" which provides the option to disable the automatic addition of the JS-file to the frontend. You can now include it manually, if you want to. Thank you, [@svale](https://github.com/svale) for wirting this code and providing it in a pull request.
+- Corrected some translation errors. _Do you want to help? Feel free to add a translation to your language - it's not that much ;-)_
