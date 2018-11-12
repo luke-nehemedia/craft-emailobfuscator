@@ -37,11 +37,9 @@ To use it, just use the `obfuscateEmail` Twig filter on any text field or string
 ```
 
 ## Configuring the Plugin
+### InludeJS
+By default the plugin inserts the necessary JavaScript to your front end html. There is a setting to turn this off if you want to include the JS code manually. The relevant JS code is available at https://github.com/Propaganistas/Email-Obfuscator/tree/master/assets
 
-There are no settings right now. 
-
-## Roadmap
-- There might be some options to choose from with regard to how to include the javascript code.
 
 ## Credits
 - [Propaganistas](https://github.com/Propaganistas) for developing this great Twig Extension
