@@ -1,0 +1,9 @@
+{% import "_includes/forms" as forms %}
+
+{{ forms.lightswitchField({
+    label: "Include JS-file"|t('craft-emailobfuscator'),
+    instructions: "By default the plugin inserts the necessary JavaScript to your front end html. You can turn this off if you want to include the JS file manually."|t('craft-emailobfuscator'),
+    id: 'includeJS',
+    name: 'includeJS',
+    on: settings.includeJS })
+}}

@@ -41,7 +41,7 @@
     "extra": {
         "name": "Craft Emailobfuscator",
         "handle": "craft-emailobfuscator",
-        "hasCpSettings": false,
+        "hasCpSettings": true,
         "hasCpSection": false,
         "changelogUrl": "https://raw.githubusercontent.com/luke-nehemedia/craft-emailobfuscator/master/CHANGELOG.md",
         "class": "lucasbares\\craftemailobfuscator\\CraftEmailobfuscator"

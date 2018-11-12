@@ -10,6 +10,8 @@
 
 namespace lucasbares\craftemailobfuscator;
 
+use lucasbares\craftemailobfuscator\models\Settings;
+
 use Craft;
 use craft\base\Plugin;
 use craft\services\Plugins;
@@ -53,7 +55,9 @@ class CraftEmailobfuscator extends Plugin
         self::$plugin = $this;
 
         // registering the AssetBundle with propaganistas js file
-        $this->view->registerAssetBundle(CraftEmailobfuscatorPropaganistasAssets::class);
+        if( $this->settings->includeJS ) {
+            $this->view->registerAssetBundle(CraftEmailobfuscatorPropaganistasAssets::class);
+        }
 
         // registering propaganistas email obfuscator
         Craft::$app->view->registerTwigExtension(new \Propaganistas\EmailObfuscator\Twig\Extension);
@@ -73,4 +77,29 @@ class CraftEmailobfuscator extends Plugin
         Craft::info( Craft::t('craft-emailobfuscator', 'plugin-loaded'),__METHOD__ );
     }
 
+    // Protected Methods
+    // =========================================================================
+
+    /**
+     * Creates settings model
+     *
+     * @return Settings
+     */
+
+    protected function createSettingsModel(): Settings
+    {
+        return new Settings();
+    }
+
+    /**
+     * Settings HTML
+     *
+     * @return string The rendered settings HTML
+     */
+    protected function settingsHtml(): string
+    {
+        return Craft::$app->view->renderTemplate('craft-emailobfuscator/settings', [
+            'settings' => $this->getSettings()
+        ]);
+    }
 }
