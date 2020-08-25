@@ -27,6 +27,7 @@ use yii\base\Event;
  * @author    Lucas Bares
  * @package   CraftEmailobfuscator
  * @since     2.0.0
+ * @version   2.2.0
  *
  */
 class CraftEmailobfuscator extends Plugin
@@ -56,11 +57,11 @@ class CraftEmailobfuscator extends Plugin
 
         // registering the AssetBundle with propaganistas js file
         if( $this->settings->includeJS ) {
-            $this->view->registerAssetBundle(CraftEmailobfuscatorPropaganistasAssets::class);
+            $this->view->registerAssetBundle(CraftEmailobfuscatorAssets::class);
         }
 
         // registering propaganistas email obfuscator
-        Craft::$app->view->registerTwigExtension(new \Propaganistas\EmailObfuscator\Twig\Extension);
+        Craft::$app->view->registerTwigExtension(new twig\ObfuscateExtension);
 
         // show success message with template tag information
         Event::on(

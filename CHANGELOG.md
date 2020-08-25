@@ -15,3 +15,7 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/) and this p
 - First "stable" release since there is no report of any bugs so far.
 - Added a setting "includeJS" which provides the option to disable the automatic addition of the JS-file to the frontend. You can now include it manually, if you want to. Thank you, [@svale](https://github.com/svale) for wirting this code and providing it in a pull request.
 - Corrected some translation errors. _Do you want to help? Feel free to add a translation to your language - it's not that much ;-)_
+
+## 2.2.0 - 2020-08-25
+- Fixed the error during installation because of the missing packagist-package
+- Included Twig-Extension into plugins codebase
