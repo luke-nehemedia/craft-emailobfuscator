@@ -63,18 +63,20 @@ class CraftEmailobfuscator extends Plugin
         // registering propaganistas email obfuscator
         if (!Craft::$app->getRequest()->isConsoleRequest) {
             Craft::$app->view->registerTwigExtension(new twig\ObfuscateExtension);
+
+            // show success message with template tag information
+            Event::on(
+                Plugins::class,
+                Plugins::EVENT_AFTER_INSTALL_PLUGIN,
+                function (PluginEvent $event) {
+                    if ($event->plugin === $this) {
+                        Craft::$app->session->setNotice(Craft::t('craft-emailobfuscator','install-success'));
+                    }
+                }
+            );
         }
 
-        // show success message with template tag information
-        Event::on(
-            Plugins::class,
-            Plugins::EVENT_AFTER_INSTALL_PLUGIN,
-            function (PluginEvent $event) {
-                if ($event->plugin === $this) {
-                    Craft::$app->session->setNotice(Craft::t('craft-emailobfuscator','install-success'));
-                }
-            }
-        );
+
 
         // log installation
         Craft::info( Craft::t('craft-emailobfuscator', 'plugin-loaded'),__METHOD__ );
