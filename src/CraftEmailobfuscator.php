@@ -56,12 +56,14 @@ class CraftEmailobfuscator extends Plugin
         self::$plugin = $this;
 
         // registering the AssetBundle with propaganistas js file
-        if( $this->settings->includeJS ) {
+        if( $this->settings->includeJS && !Craft::$app->getRequest()->isConsoleRequest) {
             $this->view->registerAssetBundle(CraftEmailobfuscatorAssets::class);
         }
 
         // registering propaganistas email obfuscator
-        Craft::$app->view->registerTwigExtension(new twig\ObfuscateExtension);
+        if (!Craft::$app->getRequest()->isConsoleRequest) {
+            Craft::$app->view->registerTwigExtension(new twig\ObfuscateExtension);
+        }
 
         // show success message with template tag information
         Event::on(
