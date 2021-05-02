@@ -2,7 +2,7 @@
     "name": "lucasbares/craft-emailobfuscator",
     "description": "A simple plugin that adds a twig tag to obfuscate email addresses (by rot13) in text fields.",
     "type": "craft-plugin",
-    "version": "2.2.0",
+    "version": "2.3.0",
     "keywords": [
         "craft",
         "cms",
