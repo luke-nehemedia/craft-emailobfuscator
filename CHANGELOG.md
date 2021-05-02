@@ -19,3 +19,6 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/) and this p
 ## 2.2.0 - 2020-08-25
 - Fixed the error during installation because of the missing packagist-package
 - Included Twig-Extension into plugins codebase
+
+## 2.3.0 - 2021-05-02
+- Fixes an issue that caused a break in the terminal (thank you, @janhenckens)
