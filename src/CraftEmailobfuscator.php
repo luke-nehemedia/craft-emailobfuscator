@@ -5,7 +5,7 @@
  * A simple plugin that adds a twig tag to obfuscate email addresses (by rot13) in text fields.
  *
  * @link      http://luke.nehemedia.de
- * @copyright Copyright (c) 2018 Lucas Bares
+ * @copyright Copyright (c) 2021 Lucas Bares
  */
 
 namespace lucasbares\craftemailobfuscator;
@@ -27,7 +27,7 @@ use yii\base\Event;
  * @author    Lucas Bares
  * @package   CraftEmailobfuscator
  * @since     2.0.0
- * @version   2.2.0
+ * @version   2.3.0
  *
  */
 class CraftEmailobfuscator extends Plugin
