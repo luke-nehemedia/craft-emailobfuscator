@@ -46,7 +46,7 @@ Unfortunately, I will not update this plugin for Craft 4. [@Miranj has a plugin]
 
 #### Install migration module
 1. Copy the migration module into `craft/modules`
-2. Uninstall this plugin :(
+2. Uninstall this plugin :( and install [Craft-Obfuscator](https://github.com/miranj/craft-obfuscator)
 3. Update your site to Craft 4
 4. Update your `composer.json` to autoload the module (see example file in folder) and run `composer dump-autoload -a`
 5. Now your templates should work againg ;) 
