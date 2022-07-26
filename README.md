@@ -41,6 +41,15 @@ To use it, just use the `obfuscateEmail` Twig filter on any text field or string
 By default the plugin inserts the necessary JavaScript to your front end html. There is a setting to turn this off if you want to include the JS code manually. The relevant JS code is available at https://github.com/Propaganistas/Email-Obfuscator/tree/master/assets
 
 
+## Craft 4 - Migration to [Craft-Obfuscator](https://github.com/miranj/craft-obfuscator)
+Unfortunately, I will not update this plugin for Craft 4. [@Miranj has a plugin](https://github.com/miranj/craft-obfuscator) with almost the same functionality. To use it with the same twig filters and make the transition more easy, I wrote a small module which you can install. 
+
+#### Install migration module
+1. Copy the module into `craft/modules`
+2. Update your `composer.json` to autoload the module (see example file in folder) and run `composer dump-autoload -a`
+3. Now your templates should work againg ;-) 
+
+
 ## Credits
 - [Propaganistas](https://github.com/Propaganistas) for developing this great Twig Extension
 - [nystudio107](https://nystudio107.com/blog) for providing great articles on Craft3 plugin development
