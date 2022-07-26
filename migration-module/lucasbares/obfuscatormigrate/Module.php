@@ -10,8 +10,6 @@ class Module extends \yii\base\Module
 	public function init()
 	{
 		parent::init();
-
-		// Custom initialization code goes here...
 		
 		if (Craft::$app->request->getIsSiteRequest()) {
 			
