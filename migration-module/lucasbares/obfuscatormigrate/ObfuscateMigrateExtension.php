@@ -2,10 +2,8 @@
 /**
  * Obfuscator plugin for Craft CMS 3.x, 4.x
  *
- * Adds a Twig filter to obfuscate emails using Hivelogic Enkoder.
+ * Adds a Twig filter to use the filter `obfuscateEmail` with the ObfuscatorTwigExtension by @miranj (https://github.com/miranj/craft-obfuscator)
  *
- * @link      https://miranj.in/
- * @copyright Copyright (c) 2018 Miranj
  */
 
 namespace lucasbares\obfuscatormigrate;
