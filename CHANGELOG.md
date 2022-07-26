@@ -25,4 +25,5 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/) and this p
 
 ## 2.4.0 - 2022-07-26
 > {note} This plugin will not be updated for Craft 4. Please use [Craft-Obfuscator](https://github.com/miranj/craft-obfuscator) instead. A migration-module that allows to use the same twig tag `obfuscateEmail` is included in this update and muste be installed manually (see README.md).
+
 This update does not contain any other improvements/changes/fixes.
