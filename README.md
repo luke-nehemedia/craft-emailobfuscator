@@ -45,9 +45,11 @@ By default the plugin inserts the necessary JavaScript to your front end html. T
 Unfortunately, I will not update this plugin for Craft 4. [@Miranj has a plugin](https://github.com/miranj/craft-obfuscator) with almost the same functionality. To use it with the same twig filters and make the transition more easy, I wrote a small module which you can install. 
 
 #### Install migration module
-1. Copy the module into `craft/modules`
-2. Update your `composer.json` to autoload the module (see example file in folder) and run `composer dump-autoload -a`
-3. Now your templates should work againg ;-) 
+1. Copy the migration module into `craft/modules`
+2. Uninstall this plugin :(
+3. Update your site to Craft 4
+4. Update your `composer.json` to autoload the module (see example file in folder) and run `composer dump-autoload -a`
+5. Now your templates should work againg ;) 
 
 
 ## Credits
